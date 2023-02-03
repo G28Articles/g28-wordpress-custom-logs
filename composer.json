@@ -1,0 +1,12 @@
+{
+    "name": "g28/custom-logs",
+    "autoload": {
+        "psr-4": {
+            "G28\\CustomLogs\\": "src/"
+        },
+        "files": [
+            "src/startup.php"
+        ]
+    },
+    "require": {}
+}

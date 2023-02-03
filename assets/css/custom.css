@@ -1,0 +1,28 @@
+.log-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.log-content {
+    margin: 0;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #DCDCDE;
+}
+
+.log-select-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 2rem;
+    align-items: center;
+}
+
+.log-select-wrapper select {
+    min-width: 250px;
+}
+
+.log-select-wrapper label {
+    font-weight: 600;
+    padding-right: 1rem;
+}
