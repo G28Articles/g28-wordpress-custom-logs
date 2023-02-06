@@ -1,10 +1,9 @@
 <?php
 /*
-Plugin Name: G28 Custom Logs
+Plugin Name: G28 WordPress Custom Logs
 Description: A G28 example plugin to demonstrate how to write log files for a custom plugin
 Version: 0.0.1
 Author: G28 - Guilherme Pereira
-Author URI: #
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;

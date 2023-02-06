@@ -8,5 +8,11 @@
             "src/startup.php"
         ]
     },
+    "authors": [
+        {
+            "name": "Guilherme Pereira",
+            "email": "guilherme00pereira@gmail.com"
+        }
+    ],
     "require": {}
 }
