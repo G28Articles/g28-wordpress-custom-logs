@@ -40,11 +40,11 @@ class Controller
 
     public function registerStylesAndScripts()
 	{
-		wp_register_style( Plugin::getAssetsPrefix() . 'admin_style', Plugin::getAssetsUrl() . 'css/custom.css' );
+		wp_register_style( Plugin::getAssetsPrefix() . 'admin_style', Plugin::getAssetsUrl() . 'css/admin.css' );
 		wp_register_script(
             Plugin::getAssetsPrefix() . 'admin-scripts',
             Plugin::getAssetsUrl() . 'js/admin-settings.js',
-            array( 'jquery', 'jquery-ui-sortable' ),
+            array( 'jquery',),
             null,
             true
         );

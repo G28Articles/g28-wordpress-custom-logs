@@ -3,7 +3,9 @@
 use G28\CustomLogs\Logger;
 
 $files          = logger::getInstance()->getLogFiles();
-[ $currentFile, $logContent ] = Logger::getInstance()->getLogFileContent( $files[0] );
+if( !empty( $files ) ) {
+    [ $currentFile, $logContent ] = Logger::getInstance()->getLogFileContent( $files[0] );
+}
 
 
 ?>
@@ -11,7 +13,8 @@ $files          = logger::getInstance()->getLogFiles();
     <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
     <div class="log-container">
         <div class="log-select-wrapper">
-            <label for="logFiles">Arquivos de log: </label>
+            <?php if( !empty( $files ) ) { ?>
+            <label for="logFiles">Log Files: </label>
             <select id="logFiles" name="logFiles">
                 <?php foreach ($files as $file) { ?>
                     <option value="<?php echo $file?>"><?php echo $file ?></option>
@@ -25,5 +28,8 @@ $files          = logger::getInstance()->getLogFiles();
         <div id="logFileContent" class="log-content">
             <?php echo $logContent ?>
         </div>
+        <?php } else { ?>
+            <p>No log files found.</p>
+        <?php } ?>
     </div>
 </div>
